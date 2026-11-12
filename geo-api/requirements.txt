@@ -1,0 +1,20 @@
+# AUTO-GENERATED from pyproject.toml [project.dependencies].
+# Do not edit by hand; run: .venv/bin/python scripts/sync_python_dependencies.py
+fastapi==0.141.1
+uvicorn[standard]==0.52.1
+sqlalchemy[asyncio]==2.0.51
+asyncmy==0.2.13
+pymysql==1.2.0
+alembic==1.19.1
+pydantic==2.13.4
+pydantic-settings==2.15.0
+eval-type-backport==0.4.0
+PyJWT==2.13.0
+httpx==0.28.1
+python-multipart==0.0.32
+cryptography==50.0.0
+redis[hiredis]==8.1.0
+sentry-sdk[fastapi]==2.67.1
+openpyxl==3.1.5
+reportlab==5.0.0
+babel==2.18.0

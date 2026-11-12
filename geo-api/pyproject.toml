@@ -1,0 +1,63 @@
+[project]
+name = "geo-api"
+version = "0.1.0"
+description = "海外 GEO 需求系统 — Python 后端 API"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+  "fastapi==0.141.1",
+  "uvicorn[standard]==0.52.1",
+  "sqlalchemy[asyncio]==2.0.51",
+  "asyncmy==0.2.13",
+  "pymysql==1.2.0",
+  "alembic==1.19.1",
+  "pydantic==2.13.4",
+  "pydantic-settings==2.15.0",
+  "eval-type-backport==0.4.0",
+  "PyJWT==2.13.0",
+  "httpx==0.28.1",
+  "python-multipart==0.0.32",
+  "cryptography==50.0.0",
+  "redis[hiredis]==8.1.0",
+  "sentry-sdk[fastapi]==2.67.1",
+  "openpyxl==3.1.5",
+  "reportlab==5.0.0",
+  "babel==2.18.0",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest==9.1.1",
+  "pytest-asyncio==1.4.0",
+  "ruff==0.16.2",
+  "pip-tools==7.5.3",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+ignore = [
+    # 应用统一存 naive UTC datetime（MySQL DATETIME 无时区），时区在边界经 time_utils 处理；
+    # DTZ 系列要求 aware datetime，与现行存储模型冲突，暂不强制（保留为已知债务）。
+    "DTZ001",
+    "DTZ003",
+    "DTZ005",
+    "DTZ007",
+    "DTZ011",
+    # 内部排序/比较使用 naive datetime，与现有 MySQL DATETIME 模型一致。
+    "DTZ901",
+    # FA100：存量模块逐步补 from __future__ import annotations，暂不阻断。
+    "FA100",
+    # Python 3.12 已是运行基线；存量 Optional 与 timezone.utc 语法单独渐进迁移。
+    "UP017",
+    "UP045",
+    # B008：FastAPI Query() 依赖默认值是框架规范写法；DTZ006 与其余 DTZ 同为 naive 时间模型。
+    "B008",
+    "DTZ006",
+]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]

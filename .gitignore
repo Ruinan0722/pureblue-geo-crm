@@ -1,0 +1,89 @@
+# 依赖与构建产物
+node_modules/
+.next/
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# macOS / 编辑器噪音
+.DS_Store
+**/.DS_Store
+
+# 敏感配置统一目录（规范位置，勿提交）
+.secrets/
+
+# 环境变量（含生产密钥）— 仅 *.example 可提交
+.env
+.env.local
+.env.*.local
+**/.env
+**/.env.local
+**/.env.*.local
+!**/.env.example
+!**/.env.production.example
+geo-api/deploy/.env.local
+geo-admin/deploy/.env.local
+geo-intake/deploy/.env.local
+deploy/split/intranet.env
+deploy/split/overseas.env
+!deploy/split/*.env.example
+
+# 本地运维笔记（含密码）
+信息.md
+
+# 本地开发进程
+.local-dev-pids/
+
+# 下载压缩包 / 数据库快照
+*.tgz
+*.snapshot*
+geo.db*
+*.db
+*.db-shm
+*.db-wal
+
+# 本地数据目录
+data/
+
+# 构建缓存
+*.tsbuildinfo
+
+# IDE / 编辑器本地配置（含 Cursor；约束写在 docs/，勿提交 .cursor）
+.idea/
+.vscode/
+.cursor/
+
+# 临时调试脚本（勿提交根目录 ad-hoc 脚本）
+/_*.py
+/123.md
+
+# 本地 QA 执行报告（指南 functional-test-guide.md 仍入库）
+docs/qa/functional-test-report-*.md
+
+# Windows 本机发版工具链（rsync/python3 shim 等，勿提交）
+tools/
+
+# 飞书 CRM 导出数据与本地迁移手册（含客户/合同等业务 dump，勿提交）
+tmp_crm_gap_export/
+CRM飞书数据迁移手册.md
+**/CRM飞书数据迁移手册.md
+**/tmp_crm_*_export/
+**/feishu_tables/
+
+# 本机一次性飞书迁移/修复脚本（依赖本地 dump 与绝对路径，勿进测试/生产仓库）
+geo-api/scripts/export_and_sync_closed_loop.py
+geo-api/scripts/sync_feishu_attachments.py
+geo-api/scripts/import_feishu_crm_sources.py
+geo-api/scripts/import_feishu_leads.py
+geo-api/scripts/bind_feishu_proposal_links.py
+geo-api/scripts/cleanup_test_and_convert_feishu_customers.py
+geo-api/scripts/migrate_feishu_status_enums.py
+geo-api/scripts/rebuild_customers_opps_contracts.py
+geo-api/scripts/repair_opp_stage_history.py
+geo-api/scripts/repair_request_closed_loop_links.py
+geo-api/scripts/split_follow_up_notes.py
+
+# Local optimized CRM builds
+.next-production/
+.runtime/

@@ -1,0 +1,25 @@
+# dependencies
+node_modules
+.pnp
+.pnp.js
+
+# next
+.next
+out
+
+# env
+.env
+.env*.local
+deploy/.env.local
+
+# debug
+npm-debug.log*
+
+# typescript
+next-env.d.ts
+
+# os
+.DS_Store
+
+# Local optimized CRM builds
+.next-production/

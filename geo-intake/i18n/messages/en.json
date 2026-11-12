@@ -1,0 +1,291 @@
+{
+  "metadata": {
+    "title": "Overseas GEO Intake",
+    "description": "Fill in your overseas GEO optimization requirements via the exclusive link from your project consultant."
+  },
+  "shell": {
+    "title": "Overseas GEO Intake"
+  },
+  "localeSwitcher": {
+    "en": "EN",
+    "zh-CN": "中文",
+    "label": "Language"
+  },
+  "needLink": {
+    "revokedTitle": "Invite link expired",
+    "invalidTitle": "Please use your exclusive link",
+    "noAccessTitle": "Access restricted",
+    "revokedDescription": "This invite link has been revoked by your project consultant and can no longer be used. Please contact your GEO consultant for a new exclusive link.",
+    "invalidDescription": "You have not entered via the exclusive link from your consultant. Please open the /c/… link from your email or Lark message before filling in the form.",
+    "noAccessDescription": "Client intake is not open to the public. Please use the exclusive link (/c/…) sent by your project consultant via Lark or email. Do not visit other URLs on this domain directly.",
+    "staffHint": "For internal staff, please",
+    "staffLogin": "sign in to the internal portal"
+  },
+  "form": {
+    "pageTitle": "Client Requirements",
+    "pageSubtitle": "Overseas GEO optimization intake",
+    "saveDraft": "Save draft",
+    "submit": "Submit requirements",
+    "submitting": "Submitting…",
+    "heroBadge": "Estimated time: 3–5 minutes",
+    "heroTitle": "Overseas GEO Optimization Intake",
+    "heroDescription": "To better understand your business and optimization needs, please fill in the information below. Fields marked with <asterisk>*</asterisk> are required; others can be completed later with your consultant.",
+    "afterSubmitTitle": "After submission, our team will:",
+    "afterSubmitItems": {
+      "0": "Website & GEO baseline assessment",
+      "1": "User intent discovery",
+      "2": "Optimization scope confirmation",
+      "3": "KPI & service timeline confirmation",
+      "4": "SOW preparation"
+    },
+    "sections": {
+      "contact": {
+        "step": "1",
+        "title": "Project contact",
+        "desc": "Company and contact information"
+      },
+      "brand": {
+        "step": "2",
+        "title": "Brand & product info",
+        "desc": "Brand, scope, target users, products, and website details"
+      },
+      "geo": {
+        "step": "3",
+        "title": "GEO optimization requirements",
+        "desc": "Target regions, platforms, background, user questions, and goals"
+      }
+    },
+    "fields": {
+      "companyName": {
+        "label": "1. Company name",
+        "hint": "Legal entity for this engagement.",
+        "placeholder": "e.g. Acme Inc."
+      },
+      "contactInfo": {
+        "label": "2. Contact information",
+        "hint": "Name, title, and phone number of your primary contact."
+      },
+      "contactName": {
+        "label": "Contact name",
+        "placeholder": "e.g. Jane Smith"
+      },
+      "contactTitle": {
+        "label": "Title",
+        "placeholder": "e.g. Head of International Marketing"
+      },
+      "contactPhone": {
+        "label": "Phone",
+        "placeholder": "e.g. +1 555 000 0000"
+      },
+      "brandName": {
+        "label": "3. Brand to optimize",
+        "hint": "The brand you want to improve visibility and recommendations for in ChatGPT. Add aliases if applicable.",
+        "placeholder": "e.g. Acme"
+      },
+      "brandAliases": {
+        "hint": "Brand aliases (optional): other names for the same brand, e.g. alias \"Acme Corp\" for \"Acme\".",
+        "placeholder": "e.g. Acme Corp",
+        "addLabel": "Add alias"
+      },
+      "scopeType": {
+        "label": "4. Optimization scope",
+        "hint": "Select what you want to optimize in this project.",
+        "brandOnlyTitle": "Brand only",
+        "brandOnlyDesc": "Optimize the brand name as a whole",
+        "specificTitle": "Specific products or services",
+        "specificDesc": "Optimize individual products or services"
+      },
+      "product": {
+        "label": "Describe the product or service",
+        "hint": "Add one or more products/services. Each needs a name plus function, audience, and use cases."
+      },
+      "hasOverseasSite": {
+        "label": "6. Do you have an overseas official website?",
+        "yesTitle": "Yes, we have one",
+        "noTitle": "Not yet"
+      },
+      "overseasSiteUrl": {
+        "label": "Overseas website URL",
+        "hint": "Enter the full URL of your overseas website.",
+        "placeholder": "e.g. https://www.example.com",
+        "privacyNote": "For brand confidentiality, URLs are stored and displayed in a masked format."
+      },
+      "targetCustomer": {
+        "label": "5. Core target users",
+        "hint": "Select the primary target user type of your brand.",
+        "tocTitle": "A. TOC",
+        "tocDesc": "Individual consumers: the brand mainly serves everyday consumers in personal purchase scenarios",
+        "tobTitle": "B. TOB",
+        "tobDesc": "Business/institutional customers: the brand mainly serves companies, institutions and organizations",
+        "bothTitle": "C. TOC & TOB",
+        "bothDesc": "Both types: covers individual consumers as well as businesses and institutional customers"
+      },
+      "regions": {
+        "label": "7. Target countries & languages",
+        "hint": "Search and select country–language pairs. You can add multiple, e.g. United States – English; United Kingdom – English."
+      },
+      "platforms": {
+        "label": "8. AI platforms to optimize",
+        "hint": "Select the AI platforms to optimize. Currently only ChatGPT is supported."
+      },
+      "optimizeBackground": {
+        "label": "9. Optimization background",
+        "hint": "Helps us align timing and approach. Optional.",
+        "placeholder": "Any marketing plans or timelines? Feel free to describe."
+      },
+      "intent": {
+        "label": "10. What questions should users ask to see your brand?",
+        "hint": "Required — choose one option and fill in at least one item.",
+        "clearTitle": "I have specific questions",
+        "clearDesc": "Pick a product per row; one question per line. Press Enter to add another.",
+        "roughTitle": "I have a general direction",
+        "roughDesc": "List directions by priority (Top 1 = highest). Pick a product; press Enter to add another."
+      },
+      "goal": {
+        "label": "11. Optimization goal",
+        "hint": "Choose the primary KPI for this project (pick one). Final targets will be confirmed in the SOW."
+      }
+    },
+    "validation": {
+      "companyName": "Please enter company name",
+      "contactName": "Please enter contact name",
+      "contactTitle": "Please enter contact title",
+      "contactPhone": "Please enter phone number",
+      "contactPhoneInvalid": "Invalid phone number format",
+      "brandName": "Please enter brand name",
+      "scopeType": "Please select optimization scope",
+      "product": "For each product/service, fill in the name and complete function, audience, and use cases",
+      "hasOverseasSite": "Please indicate whether you have an overseas website",
+      "overseasSiteUrl": "Please enter overseas website URL",
+      "overseasSiteUrlInvalid": "Please enter a valid URL (including http/https)",
+      "targetCustomer": "Please select core target users",
+      "regions": "Please add at least one complete country-language pair",
+      "platforms": "Please select at least one AI platform",
+      "intent": "Please choose specific questions or a general direction, and fill in at least one item",
+      "goal": "Please select an optimization goal"
+    },
+    "toast": {
+      "draftSaved": "Draft saved",
+      "draftSavedDesc": "You can return later to continue.",
+      "draftSaveFailed": "Could not save draft",
+      "draftSaveFailedDesc": "Your browser could not store the draft. Check storage space or privacy settings.",
+      "incomplete": "Required fields incomplete",
+      "incompleteDesc": "Please review highlighted fields before submitting.",
+      "submitFailed": "Submission failed",
+      "retryLater": "Please try again later",
+      "codeCopied": "Request ID copied",
+      "copyFailed": "Copy failed — please copy manually",
+      "alreadySubmitted": "This request was just submitted",
+      "alreadySubmittedDesc": "Request code {code}. No need to submit again."
+    },
+    "success": {
+      "title": "Submitted successfully",
+      "description": "Thank you! Our team will reach out soon to begin GEO assessment, intent discovery, and proposal preparation.",
+      "codeLabel": "Your request ID",
+      "copy": "Copy",
+      "codeHint": "Save this ID for future reference with your consultant.",
+      "reset": "Submit another request"
+    },
+    "errors": {
+      "missingInvite": "Please access via the exclusive link from your sales contact before submitting",
+      "submitFailed": "Submission failed"
+    }
+  },
+  "formBits": {
+    "optional": "Optional",
+    "selectCountry": "Search or select country/region",
+    "selectLanguage": "Search or select language",
+    "noCountryMatch": "No matching country/region",
+    "noLanguageMatch": "No matching language",
+    "removeRegion": "Remove country-language pair {index}",
+    "addRegion": "Add country / language",
+    "removeRow": "Remove row {index}",
+    "selectProduct": "Select product",
+    "deleteProduct": "Delete",
+    "productTop": "Top {index}",
+    "productServiceLabel": "Product / service",
+    "productNameLabel": "Name",
+    "productFnLabel": "Function",
+    "productUsersLabel": "Audience",
+    "productScenarioLabel": "Scenario",
+    "productCompetitorsLabel": "Competitors",
+    "addProduct": "Add product or service",
+    "productNamePlaceholder": "Product or service name, e.g. AI image generator",
+    "productFnPlaceholder": "Function, e.g. AI design tool that generates marketing posters in one click",
+    "productUsersPlaceholder": "Target users, e.g. SMB e-commerce sellers, creators, designers",
+    "productScenarioPlaceholder": "Use cases, e.g. product images, social posts, ad creatives",
+    "productCompetitorsPlaceholder": "Main competitors, e.g. Canva, Figma, Adobe Express",
+    "intentTop": "Top {index}",
+    "intentClear": {
+      "priorityHint": "List by priority (Top 1 = highest).",
+      "placeholder0": "e.g. Which AI tool is best for making posters?",
+      "placeholderNext": "Add another question…",
+      "addLabel": "Add a question",
+      "hint": "Press Enter to add another question, Shift+Enter for a line break",
+      "emptyHint": "Fill in product names above, then select a product and describe the user question.",
+      "deleteLabel": "Remove Top {index}"
+    },
+    "intentRough": {
+      "priorityHint": "List business directions by priority (Top 1 = highest).",
+      "placeholder0": "e.g. When users ask about AI poster design, product images, or AI design tool recommendations, we want our brand to appear",
+      "placeholderNext": "Add another direction…",
+      "addLabel": "Add a direction",
+      "hint": "Press Enter to add another direction, Shift+Enter for a line break",
+      "emptyHint": "Fill in product names above, then select a product and describe the business direction.",
+      "deleteLabel": "Remove Top {index}"
+    }
+  },
+  "countries": {
+    "US": "United States",
+    "UK": "United Kingdom",
+    "CA": "Canada",
+    "DE": "Germany",
+    "FR": "France",
+    "JP": "Japan",
+    "KR": "South Korea",
+    "AU": "Australia",
+    "SEA": "Southeast Asia",
+    "ME": "Middle East"
+  },
+  "languages": {
+    "en": "English",
+    "es": "Spanish",
+    "fr": "French",
+    "de": "German",
+    "ja": "Japanese",
+    "ko": "Korean",
+    "ms": "Malay",
+    "th": "Thai",
+    "vi": "Vietnamese",
+    "id": "Indonesian",
+    "ar": "Arabic"
+  },
+  "goals": {
+    "source": {
+      "label": "Source rate",
+      "desc": "Share of AI answers citing your brand site/content as a source"
+    },
+    "recommend": {
+      "label": "Recommendation rate",
+      "desc": "Share of AI answers that mention or recommend your brand"
+    },
+    "top3": {
+      "label": "Top-3 recommendation rate",
+      "desc": "Share of answers where your brand appears in the top 3 recommendations"
+    },
+    "priority": {
+      "label": "Primary recommendation rate",
+      "desc": "Share of answers where your brand is the first recommendation"
+    }
+  },
+  "formUtils": {
+    "brandOverall": "Brand overall",
+    "languagePending": "language TBD",
+    "aliasesPrefix": "aliases",
+    "fnLabel": "Function",
+    "usersLabel": "Users",
+    "scenarioLabel": "Use cases",
+    "scopeBrandOnly": "Brand only",
+    "scopeSpecific": "Specific products or services"
+  }
+}

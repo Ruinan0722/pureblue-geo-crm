@@ -1,0 +1,291 @@
+{
+  "metadata": {
+    "title": "海外 GEO 需求填报",
+    "description": "请通过项目顾问提供的专属链接填写海外 GEO 优化需求。"
+  },
+  "shell": {
+    "title": "海外 GEO 需求填报"
+  },
+  "localeSwitcher": {
+    "en": "EN",
+    "zh-CN": "中文",
+    "label": "语言"
+  },
+  "needLink": {
+    "revokedTitle": "邀请链接已失效",
+    "invalidTitle": "请使用专属链接访问",
+    "noAccessTitle": "暂无访问权限",
+    "revokedDescription": "该邀请链接已被项目顾问撤销，无法继续填写。请联系您的 GEO 项目顾问获取新的专属链接。",
+    "invalidDescription": "您尚未通过项目顾问提供的专属链接进入填报页。请打开邮件或飞书中的 /c/… 链接后再填写，不要直接访问本地址。",
+    "noAccessDescription": "客户需求填报不对公众开放。请使用项目顾问通过飞书或邮件发送给您的专属链接（/c/…）进入，不要直接访问本域名其他地址。",
+    "staffHint": "内部人员请",
+    "staffLogin": "前往内部系统登录"
+  },
+  "form": {
+    "pageTitle": "客户需求填报",
+    "pageSubtitle": "海外 GEO 优化需求收集",
+    "saveDraft": "保存草稿",
+    "submit": "提交需求",
+    "submitting": "提交中…",
+    "heroBadge": "预计用时 3—5 分钟",
+    "heroTitle": "海外 GEO 优化需求收集",
+    "heroDescription": "为了更准确地了解您的业务和优化需求，请填写以下基础信息。带 <asterisk>*</asterisk> 为必填项，其余可稍后由项目顾问协助补充。",
+    "afterSubmitTitle": "提交后，项目团队将基于以上信息完成：",
+    "afterSubmitItems": {
+      "0": "网站及 GEO 基础诊断",
+      "1": "用户意图挖掘",
+      "2": "优化范围确认",
+      "3": "KPI 及服务周期确认",
+      "4": "SOW 内容整理"
+    },
+    "sections": {
+      "contact": {
+        "step": "一",
+        "title": "项目联系人",
+        "desc": "收集公司及联系人信息"
+      },
+      "brand": {
+        "step": "二",
+        "title": "品牌与产品信息",
+        "desc": "收集品牌、优化范围、目标用户、产品介绍及官网信息"
+      },
+      "geo": {
+        "step": "三",
+        "title": "GEO 优化需求",
+        "desc": "收集国家语言、平台、优化背景、用户问题及优化目标"
+      }
+    },
+    "fields": {
+      "companyName": {
+        "label": "1. 公司名称",
+        "hint": "请填写本次合作对应的公司主体。",
+        "placeholder": "例如：字节跳动有限公司"
+      },
+      "contactInfo": {
+        "label": "2. 联系人信息",
+        "hint": "请填写本次对接的联系人姓名、职位与手机号。"
+      },
+      "contactName": {
+        "label": "联系人姓名",
+        "placeholder": "例如：张三"
+      },
+      "contactTitle": {
+        "label": "职位",
+        "placeholder": "例如：海外市场经理"
+      },
+      "contactPhone": {
+        "label": "手机号",
+        "placeholder": "例如：13800000000"
+      },
+      "brandName": {
+        "label": "3. 希望优化的品牌名称",
+        "hint": "请填写希望在 ChatGPT 中提升曝光和推荐表现的品牌；如有多个常用叫法，可补充别名。",
+        "placeholder": "例如：苹果"
+      },
+      "brandAliases": {
+        "hint": "品牌别名（选填）：同一品牌的其他叫法，如「苹果」别名「Apple」。",
+        "placeholder": "例如：Apple",
+        "addLabel": "添加别名"
+      },
+      "scopeType": {
+        "label": "4. 本次优化范围",
+        "hint": "请选择本次希望优化的范围。",
+        "brandOnlyTitle": "仅优化品牌整体",
+        "brandOnlyDesc": "只针对品牌名称做整体优化",
+        "specificTitle": "优化具体产品或服务",
+        "specificDesc": "针对具体的产品或服务做优化"
+      },
+      "product": {
+        "label": "请简单介绍该产品或服务",
+        "hint": "请按优先级从高到低填写（Top 1 为最高优先级）。可添加多个产品或服务，每个都需填写名称，并分别说明功能、主要用户群体与应用场景。"
+      },
+      "hasOverseasSite": {
+        "label": "6. 是否有海外官方网站？",
+        "yesTitle": "有海外官网",
+        "noTitle": "暂无海外官网"
+      },
+      "overseasSiteUrl": {
+        "label": "海外官网地址",
+        "hint": "请输入完整的海外官网地址。",
+        "placeholder": "例如：https://www.example.com",
+        "privacyNote": "出于品牌保密考虑，网址在系统中将以脱敏方式存储与展示。"
+      },
+      "targetCustomer": {
+        "label": "5. 品牌核心目标用户",
+        "hint": "请选择品牌主要面向的目标用户类型。",
+        "tocTitle": "A、TOC",
+        "tocDesc": "个人消费者：品牌核心目标用户为普通个人消费者，聚焦个体日常消费场景",
+        "tobTitle": "B、TOB",
+        "tobDesc": "企业/机构客户：品牌核心目标用户为企业、机构、组织等商业客户",
+        "bothTitle": "C、TOC & TOB",
+        "bothDesc": "两类用户均覆盖：同时覆盖个人消费者与企业、机构等商业客户"
+      },
+      "regions": {
+        "label": "7. 希望重点优化的国家与语言",
+        "hint": "可搜索并选择目标国家与语言，可添加多组，例如：美国-英语；英国-英语。"
+      },
+      "platforms": {
+        "label": "8. 希望优化的 AI 平台",
+        "hint": "请选择需要优化的 AI 平台，当前仅支持 ChatGPT。"
+      },
+      "optimizeBackground": {
+        "label": "9. 优化背景",
+        "hint": "帮助我们更好地匹配优化节奏，此项选填。",
+        "placeholder": "是否有营销规划 / 排期？如有可以自定义填写"
+      },
+      "intent": {
+        "label": "10. 您希望用户搜索什么问题时看到您的品牌？",
+        "hint": "请二选一，并填写对应内容，不可留空。",
+        "clearTitle": "我有明确的问题",
+        "clearDesc": "按优先级填写问题（Top 1 最高）；选择对应产品，Enter 添加下一个",
+        "roughTitle": "我只有大致业务方向",
+        "roughDesc": "按优先级填写业务方向（Top 1 最高）；选择对应产品，Enter 添加下一个"
+      },
+      "goal": {
+        "label": "11. 您的具体优化目标",
+        "hint": "请选择本次项目的核心考核指标，四选一。最终目标及考核规则将以双方确认的 SOW 为准。"
+      }
+    },
+    "validation": {
+      "companyName": "请填写公司名称",
+      "contactName": "请填写联系人姓名",
+      "contactTitle": "请填写联系人职位",
+      "contactPhone": "请填写手机号",
+      "contactPhoneInvalid": "手机号格式不正确",
+      "brandName": "请填写品牌名称",
+      "scopeType": "请选择本次优化范围",
+      "product": "请完整填写每个产品或服务的名称、功能、用户群体与应用场景（标*为必填）",
+      "hasOverseasSite": "请选择是否有海外官网",
+      "overseasSiteUrl": "请填写海外官网地址",
+      "overseasSiteUrlInvalid": "请输入完整有效的网址（含 http/https）",
+      "targetCustomer": "请选择品牌核心目标用户",
+      "regions": "请至少添加一组完整的国家与语言",
+      "platforms": "请至少选择一个 AI 平台",
+      "intent": "请选择「明确问题」或「业务方向」，并填写至少一条对应内容",
+      "goal": "请选择具体优化目标"
+    },
+    "toast": {
+      "draftSaved": "草稿已保存",
+      "draftSavedDesc": "您可以稍后回到此页面继续填写。",
+      "draftSaveFailed": "草稿保存失败",
+      "draftSaveFailedDesc": "浏览器无法保存草稿，请检查存储空间或隐私设置。",
+      "incomplete": "还有必填信息未完成",
+      "incompleteDesc": "请检查标红的项目后再提交。",
+      "submitFailed": "提交失败",
+      "retryLater": "请稍后重试",
+      "codeCopied": "需求编号已复制",
+      "copyFailed": "复制失败，请手动复制",
+      "alreadySubmitted": "该需求刚刚已提交",
+      "alreadySubmittedDesc": "需求编号 {code}，无需重复提交。"
+    },
+    "success": {
+      "title": "需求提交成功",
+      "description": "感谢您的填写！项目团队会尽快与您联系，并基于这份需求开展 GEO 诊断、意图挖掘与方案准备。",
+      "codeLabel": "您的需求编号",
+      "copy": "复制",
+      "codeHint": "请保存此编号，以便后续与项目顾问沟通时核对。",
+      "reset": "再填写一份新的需求"
+    },
+    "errors": {
+      "missingInvite": "请通过销售提供的专属链接访问后再提交",
+      "submitFailed": "提交失败"
+    }
+  },
+  "formBits": {
+    "optional": "选填",
+    "selectCountry": "搜索或选择国家/地区",
+    "selectLanguage": "搜索或选择语言",
+    "noCountryMatch": "未找到匹配的国家/地区",
+    "noLanguageMatch": "未找到匹配的语言",
+    "removeRegion": "删除第 {index} 个国家语言",
+    "addRegion": "添加国家 / 语言",
+    "removeRow": "删除第 {index} 行",
+    "selectProduct": "选择产品",
+    "deleteProduct": "删除",
+    "productTop": "Top {index}",
+    "productServiceLabel": "产品 / 服务",
+    "productNameLabel": "名称",
+    "productFnLabel": "功能",
+    "productUsersLabel": "用户",
+    "productScenarioLabel": "场景",
+    "productCompetitorsLabel": "竞品",
+    "addProduct": "添加产品或服务",
+    "productNamePlaceholder": "产品或服务名称，例如：AI 图片生成工具",
+    "productFnPlaceholder": "产品功能，例如：帮助用户一键生成营销海报的 AI 设计工具",
+    "productUsersPlaceholder": "主要用户群体，例如：中小电商卖家、内容创作者、设计师",
+    "productScenarioPlaceholder": "应用场景，例如：电商主图制作、社媒配图、广告创意生成",
+    "productCompetitorsPlaceholder": "主要竞品，例如：Canva、Figma、Adobe Express",
+    "intentTop": "Top {index}",
+    "intentClear": {
+      "priorityHint": "请按优先级从高到低填写（Top 1 为最高优先级）。",
+      "placeholder0": "例如：哪个 AI 工具适合制作海报？",
+      "placeholderNext": "继续填写下一个问题…",
+      "addLabel": "添加一个问题",
+      "hint": "按 Enter 添加下一个问题，Shift + Enter 在问题内换行",
+      "emptyHint": "请先在上方填写产品名称，再选择对应产品并描述用户问题。",
+      "deleteLabel": "删除 Top {index}"
+    },
+    "intentRough": {
+      "priorityHint": "请按优先级从高到低填写业务方向（Top 1 为最高优先级）。",
+      "placeholder0": "例如：希望用户询问 AI 海报设计、商品图制作或 AI 设计工具推荐时看到我们的品牌",
+      "placeholderNext": "继续填写下一个业务方向…",
+      "addLabel": "添加一个方向",
+      "hint": "按 Enter 添加下一个方向，Shift + Enter 在描述内换行",
+      "emptyHint": "请先在上方填写产品名称，再选择对应产品并描述业务方向。",
+      "deleteLabel": "删除 Top {index}"
+    }
+  },
+  "countries": {
+    "US": "美国",
+    "UK": "英国",
+    "CA": "加拿大",
+    "DE": "德国",
+    "FR": "法国",
+    "JP": "日本",
+    "KR": "韩国",
+    "AU": "澳大利亚",
+    "SEA": "东南亚",
+    "ME": "中东"
+  },
+  "languages": {
+    "en": "英语",
+    "es": "西班牙语",
+    "fr": "法语",
+    "de": "德语",
+    "ja": "日语",
+    "ko": "韩语",
+    "ms": "马来语",
+    "th": "泰语",
+    "vi": "越南语",
+    "id": "印尼语",
+    "ar": "阿拉伯语"
+  },
+  "goals": {
+    "source": {
+      "label": "来源率",
+      "desc": "品牌官网/内容被 AI 引用作为信息来源的比例"
+    },
+    "recommend": {
+      "label": "推荐率",
+      "desc": "AI 回答中提及或推荐该品牌的比例"
+    },
+    "top3": {
+      "label": "前三推荐率",
+      "desc": "品牌出现在 AI 推荐前三位的比例"
+    },
+    "priority": {
+      "label": "优先推荐率",
+      "desc": "品牌被作为首选推荐的比例"
+    }
+  },
+  "formUtils": {
+    "brandOverall": "品牌整体",
+    "languagePending": "待补充语言",
+    "aliasesPrefix": "别名",
+    "fnLabel": "功能",
+    "usersLabel": "用户",
+    "scenarioLabel": "场景",
+    "scopeBrandOnly": "仅优化品牌整体",
+    "scopeSpecific": "优化具体产品或服务"
+  }
+}

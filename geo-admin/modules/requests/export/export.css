@@ -1,0 +1,343 @@
+/* PDF 导出模板专用样式 — 仅 hex/rgb；徽章用 SVG，见 export-badges.tsx */
+
+#request-export-root {
+  width: 794px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 12px 32px 24px;
+  background: #ffffff;
+  color: #0f172a;
+  font-family: "PingFang SC", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  box-sizing: border-box;
+}
+
+#request-export-root *,
+#request-export-root *::before,
+#request-export-root *::after {
+  box-sizing: border-box;
+}
+
+.rex-muted {
+  color: #64748b;
+}
+
+.rex-plain {
+  margin: 0;
+}
+
+.rex-alias {
+  margin: 8px 0 0;
+  font-size: 12px;
+  color: #64748b;
+}
+
+.rex-intent-mode {
+  margin: 0 0 8px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #2563eb;
+}
+
+.rex-header {
+  margin-bottom: 10px;
+  padding: 12px 20px;
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+  background: linear-gradient(180deg, #eef2f9 0%, #ffffff 100%);
+  border-bottom: 2px solid #27478c;
+}
+
+.rex-header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.rex-header-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.rex-logo {
+  height: 32px;
+  width: auto;
+  display: block;
+}
+
+.rex-header-divider {
+  border-left: 1px solid #e2e8f0;
+  padding-left: 16px;
+}
+
+.rex-title-sub {
+  margin: 0;
+  font-size: 12px;
+  color: #64748b;
+}
+
+.rex-title-main {
+  margin: 4px 0 0;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.rex-header-right {
+  text-align: right;
+}
+
+.rex-code {
+  display: block;
+  margin-top: 8px;
+  font-family: ui-monospace, monospace;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.rex-section {
+  margin-bottom: 16px;
+  padding: 20px;
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+  background: #ffffff;
+}
+
+.rex-section--continued {
+  padding-top: 16px;
+}
+
+.rex-section-continue {
+  margin: 0 0 16px;
+  padding: 0 0 10px;
+  border-bottom: 1px dashed #e2e8f0;
+  font-size: 12px;
+  font-weight: 600;
+  color: #64748b;
+  line-height: 1.4;
+}
+
+.rex-field-label--continue {
+  color: #64748b;
+}
+
+.rex-pdf-field--card-only .rex-field-value {
+  margin-top: 0;
+}
+
+.rex-section-head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.rex-section-head-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.rex-section-title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.rex-section-desc {
+  margin: 4px 0 0;
+  font-size: 13px;
+  color: #64748b;
+  line-height: 1.4;
+}
+
+.rex-fields {
+  display: block;
+}
+
+.rex-fields > div + div {
+  margin-top: 16px;
+}
+
+.rex-field-label {
+  margin: 0 0 8px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.rex-field-value {
+  padding: 12px 16px;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  background: #f8fafc;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.rex-contact-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.rex-contact-table th {
+  padding: 0 8px 6px 0;
+  font-size: 12px;
+  font-weight: normal;
+  color: #64748b;
+  text-align: left;
+  vertical-align: bottom;
+}
+
+.rex-contact-table td {
+  padding: 0 8px 0 0;
+  font-weight: 600;
+  text-align: left;
+  vertical-align: top;
+  line-height: 1.5;
+}
+
+.rex-subcard {
+  margin-top: 8px;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px dashed #93c5fd;
+  background: #eff6ff;
+}
+
+.rex-subcard .rex-top-badge-svg {
+  margin-bottom: 8px;
+}
+
+.rex-subcard-text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.rex-product-title-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.rex-product-title-text {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.rex-product-card {
+  padding: 16px;
+  border-radius: 12px;
+  border: 1px dashed #93c5fd;
+  background: #eff6ff;
+}
+
+.rex-product-card + .rex-product-card {
+  margin-top: 12px;
+}
+
+.rex-dl-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.rex-dl-table th {
+  width: 120px;
+  padding: 5px 10px 5px 0;
+  font-size: 14px;
+  font-weight: normal;
+  color: #64748b;
+  text-align: left;
+  vertical-align: top;
+  line-height: 1.5;
+}
+
+.rex-dl-table td {
+  padding: 5px 0;
+  font-size: 14px;
+  text-align: left;
+  vertical-align: top;
+  line-height: 1.5;
+}
+
+.rex-footer {
+  padding-top: 8px;
+  text-align: center;
+  font-size: 12px;
+  color: #64748b;
+}
+
+.request-export-section {
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+[data-pdf-break="before"] {
+  break-before: page;
+  page-break-before: always;
+}
+
+@media print {
+  @page {
+    size: A4;
+    margin: 10mm;
+  }
+
+  html,
+  body {
+    background: #ffffff !important;
+    height: auto !important;
+    overflow: visible !important;
+  }
+
+  /* 预览页打印：隐藏侧栏、顶栏、Toast 等应用壳层 */
+  body.request-export-print-mode aside,
+  body.request-export-print-mode .request-export-print-chrome,
+  body.request-export-print-mode [data-sonner-toaster],
+  body.request-export-print-mode [data-sonner-toaster] * {
+    display: none !important;
+  }
+
+  body.request-export-print-mode .lg\:pl-64 {
+    padding-left: 0 !important;
+  }
+
+  body.request-export-print-mode .min-h-screen {
+    min-height: auto !important;
+  }
+
+  body.request-export-print-mode .request-export-print-page,
+  body.request-export-print-mode .request-export-print-shell {
+    display: block !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    background: #ffffff !important;
+  }
+
+  #request-export-root {
+    position: static !important;
+    left: auto !important;
+    top: auto !important;
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background: #ffffff !important;
+    color: #0f172a !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  #request-export-root * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}
